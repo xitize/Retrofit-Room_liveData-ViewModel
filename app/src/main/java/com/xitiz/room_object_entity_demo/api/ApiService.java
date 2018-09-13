@@ -1,6 +1,6 @@
 package com.xitiz.room_object_entity_demo.api;
 
-import com.xitiz.room_object_entity_demo.db.Response;
+import com.xitiz.room_object_entity_demo.db.entity.Response;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

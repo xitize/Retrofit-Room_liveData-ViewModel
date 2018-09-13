@@ -1,4 +1,4 @@
-package com.xitiz.room_object_entity_demo;
+package com.xitiz.room_object_entity_demo.ui;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -6,11 +6,12 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.support.annotation.NonNull;
 
-import com.xitiz.room_object_entity_demo.db.Response;
+import com.xitiz.room_object_entity_demo.db.ResponseRepository;
+import com.xitiz.room_object_entity_demo.db.entity.Response;
 
 public class ResponseViewModel extends AndroidViewModel {
-    private LiveData<Response> dbResponse = new MutableLiveData<>();
-    private MutableLiveData<Response> webResponse = new MutableLiveData<>();
+    private LiveData<Response> dbResponse;
+    private MutableLiveData<Response> webResponse;
 
     public ResponseViewModel(@NonNull Application application) {
         super(application);

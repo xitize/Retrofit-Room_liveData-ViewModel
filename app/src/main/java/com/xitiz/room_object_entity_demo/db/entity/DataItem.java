@@ -1,4 +1,4 @@
-package com.xitiz.room_object_entity_demo.db;
+package com.xitiz.room_object_entity_demo.db.entity;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

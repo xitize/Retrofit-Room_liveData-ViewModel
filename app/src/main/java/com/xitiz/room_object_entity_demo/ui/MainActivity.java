@@ -1,4 +1,4 @@
-package com.xitiz.room_object_entity_demo;
+package com.xitiz.room_object_entity_demo.ui;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -7,7 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.xitiz.room_object_entity_demo.db.Response;
+import com.xitiz.room_object_entity_demo.R;
+import com.xitiz.room_object_entity_demo.db.entity.Response;
 
 public class MainActivity extends AppCompatActivity {
     ResponseViewModel responseViewModel;

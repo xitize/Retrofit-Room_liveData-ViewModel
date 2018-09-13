@@ -1,4 +1,4 @@
-package com.xitiz.room_object_entity_demo;
+package com.xitiz.room_object_entity_demo.db;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.xitiz.room_object_entity_demo.api.ApiService;
 import com.xitiz.room_object_entity_demo.api.RetrofitApi;
-import com.xitiz.room_object_entity_demo.db.Response;
+import com.xitiz.room_object_entity_demo.db.entity.Response;
 import com.xitiz.room_object_entity_demo.db.ResponseDao;
 import com.xitiz.room_object_entity_demo.db.ResponseDatabase;
 
@@ -56,11 +56,11 @@ public class ResponseRepository {
     }
 
 
-    MutableLiveData<Response> getWebResponse() {
+    public MutableLiveData<Response> getWebResponse() {
         return webResponse;
     }
 
-    LiveData<Response> getDbResponse() {
+    public LiveData<Response> getDbResponse() {
         dbResponse = responseDao.getResponse();
         return dbResponse;
     }

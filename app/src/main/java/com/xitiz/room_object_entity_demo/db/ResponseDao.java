@@ -1,11 +1,12 @@
 package com.xitiz.room_object_entity_demo.db;
 
 import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
+
+import com.xitiz.room_object_entity_demo.db.entity.Response;
 
 @Dao
 public interface ResponseDao {
